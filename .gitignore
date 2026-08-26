@@ -42,12 +42,5 @@ Thumbs.db
 *.temp
 temp/
 
-# Screenshots / local artifacts
-*.png
-*.jpg
-*.jpeg
-.github-repo-*
-.playwright-mcp/
-
 # Keep example env
 !.env.example
