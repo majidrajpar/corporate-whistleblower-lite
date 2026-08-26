@@ -1,0 +1,597 @@
+- generic [ref=f11e2]:
+  - generic [ref=f11e3]:
+    - link "Skip to content" [ref=f11e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner "Global navigation menu" [ref=f11e8]:
+      - generic [ref=f11e9]:
+        - generic [ref=f11e10]:
+          - button "Open menu" [ref=f11e12] [cursor=pointer]
+          - link "Homepage (g then d)" [ref=f11e15] [cursor=pointer]:
+            - /url: /
+        - generic [ref=f11e18]:
+          - navigation "Breadcrumbs" [ref=f11e19]:
+            - list [ref=f11e20]:
+              - listitem [ref=f11e21]:
+                - link "majidrajpar" [ref=f11e22] [cursor=pointer]:
+                  - /url: /majidrajpar
+              - listitem [ref=f11e24]:
+                - link "corporate-whistleblower-lite" [ref=f11e25] [cursor=pointer]:
+                  - /url: /majidrajpar/corporate-whistleblower-lite
+                - button "Switch repository (alt shift r)" [ref=f11e26] [cursor=pointer]
+          - button "Open quick search dialog, type / to search" [ref=f11e31] [cursor=pointer]:
+            - generic [ref=f11e33]:
+              - generic:
+                - text: Type
+                - generic: /
+                - text: to search
+        - generic [ref=f11e34]:
+          - generic [ref=f11e35]:
+            - generic [ref=f11e38]:
+              - link "Chat with Copilot" [ref=f11e40] [cursor=pointer]:
+                - /url: /copilot
+              - button "Open Copilot…" [ref=f11e45] [cursor=pointer]
+            - button "Create new..." [ref=f11e47] [cursor=pointer]
+            - generic [ref=f11e49]:
+              - link "All issues" [ref=f11e50] [cursor=pointer]:
+                - /url: /issues
+              - link "All pull requests" [ref=f11e54] [cursor=pointer]:
+                - /url: /pulls
+              - link "All repositories" [ref=f11e57] [cursor=pointer]:
+                - /url: /repos
+          - link "You have no unread notifications (g then n)" [ref=f11e60] [cursor=pointer]:
+            - /url: /notifications
+          - button "Open user navigation menu" [ref=f11e64] [cursor=pointer]:
+            - img "User avatar" [ref=f11e65]
+      - heading "Repository navigation" [level=2] [ref=f11e66]
+      - navigation "Repository" [ref=f11e67]:
+        - list [ref=f11e68]:
+          - listitem [ref=f11e69]:
+            - link "Code" [ref=f11e70] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite
+          - listitem [ref=f11e75]:
+            - link "Issues" [ref=f11e76] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite/issues
+          - listitem [ref=f11e82]:
+            - link "Pull requests" [ref=f11e83] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite/pulls
+          - listitem [ref=f11e88]:
+            - link "Agents" [ref=f11e89] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite/agents?author=majidrajpar
+          - listitem [ref=f11e95]:
+            - link "Actions" [ref=f11e96] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite/actions
+          - listitem [ref=f11e101]:
+            - link "Projects" [ref=f11e102] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite/projects
+          - listitem [ref=f11e107]:
+            - link "Wiki" [ref=f11e108] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite/wiki
+          - listitem [ref=f11e113]:
+            - link "Security and quality" [ref=f11e114] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite/security
+          - listitem [ref=f11e119]:
+            - link "Insights" [ref=f11e120] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite/pulse
+          - listitem [ref=f11e125]:
+            - link "Settings" [ref=f11e126] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite/settings
+  - main [ref=f11e134]:
+    - generic [ref=f11e147]:
+      - generic [ref=f11e152]:
+        - generic [ref=f11e155]:
+          - img "majidrajpar" [ref=f11e156]
+          - generic "corporate-whistleblower-lite" [ref=f11e157]:
+            - strong [ref=f11e158]:
+              - link "corporate-whistleblower-lite" [ref=f11e159] [cursor=pointer]:
+                - /url: /majidrajpar/corporate-whistleblower-lite
+          - generic [ref=f11e160]: Public
+        - list [ref=f11e162]:
+          - listitem [ref=f11e163]:
+            - button "Pin majidrajpar/corporate-whistleblower-lite" [ref=f11e164] [cursor=pointer]:
+              - generic [ref=f11e165]: Pin
+          - listitem [ref=f11e167]:
+            - 'button "Watch: Participating in majidrajpar/corporate-whistleblower-lite. Click to change subscription settings." [ref=f11e168] [cursor=pointer]':
+              - generic [ref=f11e169]:
+                - generic [ref=f11e170]: Watch
+                - generic:
+                  - generic: "0"
+                  - generic: (0)
+          - listitem [ref=f11e171]:
+            - button "You own majidrajpar/corporate-whistleblower-lite and are not a member of any organizations" [ref=f11e172]:
+              - generic [ref=f11e174]:
+                - text: Fork
+                - generic [ref=f11e175]: "0"
+                - generic [ref=f11e176]: (0)
+          - listitem [ref=f11e177]:
+            - generic [ref=f11e178]:
+              - button "Star majidrajpar/corporate-whistleblower-lite" [ref=f11e181] [cursor=pointer]:
+                - generic [ref=f11e183]:
+                  - text: Star
+                  - generic [ref=f11e184]: "0"
+                  - generic [ref=f11e185]: (0)
+              - button "Star lists" [ref=f11e187] [cursor=pointer]
+      - generic [ref=f11e190]:
+        - generic [ref=f11e193]:
+          - generic [ref=f11e194]:
+            - generic [ref=f11e195]:
+              - button "main branch" [ref=f11e197] [cursor=pointer]:
+                - generic [ref=f11e198]: main
+              - generic [ref=f11e202]:
+                - link "Branches" [ref=f11e203] [cursor=pointer]:
+                  - /url: /majidrajpar/corporate-whistleblower-lite/branches
+                - link "Tags" [ref=f11e206] [cursor=pointer]:
+                  - /url: /majidrajpar/corporate-whistleblower-lite/tags
+            - generic [ref=f11e209]:
+              - generic [ref=f11e210]:
+                - generic [ref=f11e213]:
+                  - combobox "Go to file" [ref=f11e217]
+                  - generic [ref=f11e220]:
+                    - generic [ref=f11e221]: t
+                    - generic [ref=f11e222]: T
+                - generic [ref=f11e223]:
+                  - heading "Add file" [level=2] [ref=f11e224]
+                  - button "Add file" [ref=f11e225] [cursor=pointer]
+              - button "Code" [ref=f11e231] [cursor=pointer]
+          - generic [ref=f11e234]:
+            - generic [ref=f11e235]:
+              - generic [ref=f11e237]:
+                - heading "Latest commit" [level=2] [ref=f11e238]
+                - generic [ref=f11e241]:
+                  - heading "History" [level=2] [ref=f11e242]
+                  - link "6 Commits" [ref=f11e243] [cursor=pointer]:
+                    - /url: /majidrajpar/corporate-whistleblower-lite/commits/main/
+              - heading "Folders and files" [level=2] [ref=f11e246]
+              - table "Folders and files" [ref=f11e247]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message"
+                    - columnheader "Last commit date"
+                - rowgroup [ref=f11e248]:
+                  - row "app, (Directory)" [ref=f11e249]:
+                    - cell [ref=f11e250]:
+                      - link "app, (Directory)" [ref=f11e257] [cursor=pointer]:
+                        - /url: /majidrajpar/corporate-whistleblower-lite/tree/main/app
+                        - text: app
+                    - cell [ref=f11e258]
+                    - cell [ref=f11e260]
+                  - row ".gitignore, (File)" [ref=f11e263]:
+                    - cell [ref=f11e264]:
+                      - link ".gitignore, (File)" [ref=f11e271] [cursor=pointer]:
+                        - /url: /majidrajpar/corporate-whistleblower-lite/blob/main/.gitignore
+                        - text: .gitignore
+                    - cell [ref=f11e272]
+                    - cell [ref=f11e274]
+                  - row "LICENSE, (File)" [ref=f11e277]:
+                    - cell [ref=f11e278]:
+                      - link "LICENSE, (File)" [ref=f11e285] [cursor=pointer]:
+                        - /url: /majidrajpar/corporate-whistleblower-lite/blob/main/LICENSE
+                        - text: LICENSE
+                    - cell [ref=f11e286]
+                    - cell [ref=f11e288]
+                  - row "README.md, (File)" [ref=f11e291]:
+                    - cell [ref=f11e292]:
+                      - link "README.md, (File)" [ref=f11e299] [cursor=pointer]:
+                        - /url: /majidrajpar/corporate-whistleblower-lite/blob/main/README.md
+                        - text: README.md
+                    - cell [ref=f11e300]
+                    - cell [ref=f11e302]
+                  - row "docker-compose.yml, (File)" [ref=f11e305]:
+                    - cell [ref=f11e306]:
+                      - link "docker-compose.yml, (File)" [ref=f11e313] [cursor=pointer]:
+                        - /url: /majidrajpar/corporate-whistleblower-lite/blob/main/docker-compose.yml
+                        - text: docker-compose.yml
+                    - cell [ref=f11e314]
+                    - cell [ref=f11e316]
+            - generic [ref=f11e320]:
+              - generic [ref=f11e321]:
+                - heading "Repository files navigation" [level=2] [ref=f11e322]
+                - navigation "Repository files" [ref=f11e323]:
+                  - list [ref=f11e324]:
+                    - listitem [ref=f11e325]:
+                      - link "README" [ref=f11e326] [cursor=pointer]:
+                        - /url: "#"
+                    - listitem [ref=f11e331]:
+                      - link "MIT license" [ref=f11e332] [cursor=pointer]:
+                        - /url: "#"
+                - button "Edit file" [ref=f11e337] [cursor=pointer]
+                - button "Outline" [ref=f11e340] [cursor=pointer]
+              - article [ref=f11e344]:
+                - generic [ref=f11e345]:
+                  - heading "Corporate Whistleblower Lite" [level=1] [ref=f11e346]
+                  - 'link "Permalink: Corporate Whistleblower Lite" [ref=f11e347] [cursor=pointer]':
+                    - /url: "#corporate-whistleblower-lite"
+                - paragraph [ref=f11e350]: A lightweight, open-source, self-hosted whistleblowing web application for organizations of all sizes — companies, NGOs, municipalities, schools, and more. Deploy in minutes — not hours.
+                - paragraph [ref=f11e351]: Enable anyone to report wrongdoing anonymously, while internal teams review, investigate, and escalate reports — all while maintaining complete data privacy and control.
+                - generic [ref=f11e352]:
+                  - heading "Features" [level=2] [ref=f11e353]
+                  - 'link "Permalink: Features" [ref=f11e354] [cursor=pointer]':
+                    - /url: "#features"
+                - list [ref=f11e357]:
+                  - listitem [ref=f11e358]:
+                    - strong [ref=f11e359]: Anonymous Reporting
+                    - text: ": Submit reports without any identifying information — no accounts, no IP tracking"
+                  - listitem [ref=f11e360]:
+                    - strong [ref=f11e361]: File Attachments
+                    - text: ": Upload evidence (JPG, PNG, PDF up to 5MB) with UUID filenames and EXIF stripping"
+                  - listitem [ref=f11e362]:
+                    - strong [ref=f11e363]: Rate Limiting
+                    - text: ": 5 reports per hour per IP to prevent abuse"
+                  - listitem [ref=f11e364]:
+                    - strong [ref=f11e365]: Internal Audit Dashboard
+                    - text: ": View all reports, filter by status/category, update status, escalate to CEO"
+                  - listitem [ref=f11e366]:
+                    - strong [ref=f11e367]: CEO Dashboard
+                    - text: ": Separate view for escalated reports with summary statistics"
+                  - listitem [ref=f11e368]:
+                    - strong [ref=f11e369]: Audit Trail
+                    - text: ": Track who viewed/escalated/resolved reports (reporter remains anonymous)"
+                  - listitem [ref=f11e370]:
+                    - strong [ref=f11e371]: Role-Based Access
+                    - text: ": JWT authentication for Internal Audit and CEO roles"
+                  - listitem [ref=f11e372]:
+                    - strong [ref=f11e373]: Security
+                    - text: ": Helmet.js, CORS, input validation, file upload security, bcrypt hashing"
+                  - listitem [ref=f11e374]:
+                    - strong [ref=f11e375]: Self-Hosted
+                    - text: ": Complete data control — no external APIs or cloud dependencies"
+                  - listitem [ref=f11e376]:
+                    - strong [ref=f11e377]: Data Residency
+                    - text: ": All data stored locally on your server"
+                - generic [ref=f11e378]:
+                  - heading "Why This Project?" [level=2] [ref=f11e379]
+                  - 'link "Permalink: Why This Project?" [ref=f11e380] [cursor=pointer]':
+                    - /url: "#why-this-project"
+                - paragraph [ref=f11e383]:
+                  - text: Unlike existing solutions (
+                  - link "SecureDrop" [ref=f11e384] [cursor=pointer]:
+                    - /url: https://github.com/freedomofpress/securedrop
+                  - text: ","
+                  - link "GlobaLeaks" [ref=f11e385] [cursor=pointer]:
+                    - /url: https://github.com/globaleaks/globaleaks-whistleblowing-software
+                  - text: ") which are designed for journalists and require complex infrastructure, this project is:"
+                - list [ref=f11e386]:
+                  - listitem [ref=f11e387]:
+                    - strong [ref=f11e388]: Lightweight
+                    - text: ": Runs on a single server with SQLite — no separate database server needed"
+                  - listitem [ref=f11e389]:
+                    - strong [ref=f11e390]: Easy to Deploy
+                    - text: ":"
+                    - code [ref=f11e391]: npm install
+                    - text: and you're running in minutes, not hours
+                  - listitem [ref=f11e392]:
+                    - strong [ref=f11e393]: Corporate-Focused
+                    - text: ": Built for internal organizational use with role-based access (Internal Audit & CEO)"
+                  - listitem [ref=f11e394]:
+                    - strong [ref=f11e395]: Modern Stack
+                    - text: ": React 18 + Vite + Express + Prisma (not Python/Django)"
+                  - listitem [ref=f11e396]:
+                    - strong [ref=f11e397]: Compliance-Ready
+                    - text: ": Designed for data residency and privacy requirements worldwide"
+                - table [ref=f11e399]:
+                  - rowgroup [ref=f11e400]:
+                    - row [ref=f11e401]:
+                      - columnheader "Feature" [ref=f11e402]
+                      - columnheader "SecureDrop" [ref=f11e403]
+                      - columnheader "GlobaLeaks" [ref=f11e404]
+                      - columnheader [ref=f11e405]:
+                        - strong [ref=f11e406]: This Project
+                  - rowgroup [ref=f11e407]:
+                    - row [ref=f11e408]:
+                      - cell "Setup Time" [ref=f11e409]
+                      - cell "Hours" [ref=f11e410]
+                      - cell "Hours" [ref=f11e411]
+                      - cell [ref=f11e412]:
+                        - strong [ref=f11e413]: Minutes
+                    - row [ref=f11e414]:
+                      - cell "Database" [ref=f11e415]
+                      - cell "PostgreSQL" [ref=f11e416]
+                      - cell "PostgreSQL" [ref=f11e417]
+                      - cell [ref=f11e418]:
+                        - strong [ref=f11e419]: SQLite
+                    - row [ref=f11e420]:
+                      - cell "Stack" [ref=f11e421]
+                      - cell "Python/Flask" [ref=f11e422]
+                      - cell "Python" [ref=f11e423]
+                      - cell [ref=f11e424]:
+                        - strong [ref=f11e425]: Node.js/React
+                    - row [ref=f11e426]:
+                      - cell "Target Users" [ref=f11e427]
+                      - cell "Journalists" [ref=f11e428]
+                      - cell "Media Orgs" [ref=f11e429]
+                      - cell [ref=f11e430]:
+                        - strong [ref=f11e431]: Companies
+                    - row [ref=f11e432]:
+                      - cell "Deployment" [ref=f11e433]
+                      - cell "Tor + Servers" [ref=f11e434]
+                      - cell "Multi-service" [ref=f11e435]
+                      - cell [ref=f11e436]:
+                        - strong [ref=f11e437]: Single Server
+                - generic [ref=f11e438]:
+                  - heading "Technology Stack" [level=2] [ref=f11e439]
+                  - 'link "Permalink: Technology Stack" [ref=f11e440] [cursor=pointer]':
+                    - /url: "#technology-stack"
+                - generic [ref=f11e443]:
+                  - heading "Backend" [level=3] [ref=f11e444]
+                  - 'link "Permalink: Backend" [ref=f11e445] [cursor=pointer]':
+                    - /url: "#backend"
+                - list [ref=f11e448]:
+                  - listitem [ref=f11e449]:
+                    - strong [ref=f11e450]: Node.js
+                    - text: +
+                    - strong [ref=f11e451]: Express.js
+                  - listitem [ref=f11e452]:
+                    - strong [ref=f11e453]: Prisma ORM
+                    - text: +
+                    - strong [ref=f11e454]: SQLite
+                  - listitem [ref=f11e455]:
+                    - strong [ref=f11e456]: JWT
+                    - text: authentication
+                  - listitem [ref=f11e457]:
+                    - strong [ref=f11e458]: Multer
+                    - text: for file uploads
+                  - listitem [ref=f11e459]:
+                    - strong [ref=f11e460]: Helmet
+                    - text: +
+                    - strong [ref=f11e461]: express-rate-limit
+                    - text: for security
+                - generic [ref=f11e462]:
+                  - heading "Frontend" [level=3] [ref=f11e463]
+                  - 'link "Permalink: Frontend" [ref=f11e464] [cursor=pointer]':
+                    - /url: "#frontend"
+                - list [ref=f11e467]:
+                  - listitem [ref=f11e468]:
+                    - strong [ref=f11e469]: React 18
+                  - listitem [ref=f11e470]:
+                    - strong [ref=f11e471]: Vite
+                    - text: (build tool)
+                  - listitem [ref=f11e472]:
+                    - strong [ref=f11e473]: React Router
+                    - text: (navigation)
+                  - listitem [ref=f11e474]:
+                    - strong [ref=f11e475]: CSS Modules
+                    - text: (styling)
+                - generic [ref=f11e476]:
+                  - heading "Quick Start" [level=2] [ref=f11e477]
+                  - 'link "Permalink: Quick Start" [ref=f11e478] [cursor=pointer]':
+                    - /url: "#quick-start"
+                - generic [ref=f11e481]:
+                  - heading "Prerequisites" [level=3] [ref=f11e482]
+                  - 'link "Permalink: Prerequisites" [ref=f11e483] [cursor=pointer]':
+                    - /url: "#prerequisites"
+                - list [ref=f11e486]:
+                  - listitem [ref=f11e487]:
+                    - text: Node.js 18+ (check with
+                    - code [ref=f11e488]: node --version
+                    - text: )
+                  - listitem [ref=f11e489]:
+                    - text: npm 9+ (check with
+                    - code [ref=f11e490]: npm --version
+                    - text: )
+                - generic [ref=f11e491]:
+                  - heading "1. Clone and Setup" [level=3] [ref=f11e492]
+                  - 'link "Permalink: 1. Clone and Setup" [ref=f11e493] [cursor=pointer]':
+                    - /url: "#1-clone-and-setup"
+                - generic [ref=f11e496]:
+                  - generic [ref=f11e497]: git clone https://github.com/your-org/ksa-whistleblowing.git cd ksa-whistleblowing
+                  - button "Copy code to clipboard" [ref=f11e499] [cursor=pointer]
+                - generic [ref=f11e503]:
+                  - heading "2. Backend Setup" [level=3] [ref=f11e504]
+                  - 'link "Permalink: 2. Backend Setup" [ref=f11e505] [cursor=pointer]':
+                    - /url: "#2-backend-setup"
+                - generic [ref=f11e508]:
+                  - generic [ref=f11e509]:
+                    - text: cd app/backend
+                    - generic [ref=f11e510]: "# Install dependencies"
+                    - text: npm install
+                    - generic [ref=f11e511]: "# Setup environment"
+                    - text: cp .env.example .env
+                    - generic [ref=f11e512]: "# Edit .env with your configuration"
+                    - generic [ref=f11e513]: "# Generate Prisma client"
+                    - text: npm run db:generate
+                    - generic [ref=f11e514]: "# Run database migrations"
+                    - text: npm run db:migrate
+                    - generic [ref=f11e515]: "# Seed initial users (from env vars)"
+                    - text: npm run db:seed
+                    - generic [ref=f11e516]: "# Start server"
+                    - text: npm run dev
+                  - button "Copy code to clipboard" [ref=f11e518] [cursor=pointer]
+                - paragraph [ref=f11e522]:
+                  - text: The backend will be available at
+                  - code [ref=f11e523]: http://localhost:3001
+                - generic [ref=f11e524]:
+                  - heading "3. Frontend Setup" [level=3] [ref=f11e525]
+                  - 'link "Permalink: 3. Frontend Setup" [ref=f11e526] [cursor=pointer]':
+                    - /url: "#3-frontend-setup"
+                - generic [ref=f11e529]:
+                  - generic [ref=f11e530]:
+                    - text: cd app/frontend
+                    - generic [ref=f11e531]: "# Install dependencies"
+                    - text: npm install
+                    - generic [ref=f11e532]: "# Start development server"
+                    - text: npm run dev
+                  - button "Copy code to clipboard" [ref=f11e534] [cursor=pointer]
+                - paragraph [ref=f11e538]:
+                  - text: The frontend will be available at
+                  - code [ref=f11e539]: http://localhost:5173
+                - generic [ref=f11e540]:
+                  - heading "4. Login Credentials" [level=3] [ref=f11e541]
+                  - 'link "Permalink: 4. Login Credentials" [ref=f11e542] [cursor=pointer]':
+                    - /url: "#4-login-credentials"
+                - paragraph [ref=f11e545]: "Default users are created from environment variables:"
+                - list [ref=f11e546]:
+                  - listitem [ref=f11e547]:
+                    - strong [ref=f11e548]: Auditor
+                    - text: ": Set"
+                    - code [ref=f11e549]: INITIAL_AUDITOR_USER
+                    - text: and
+                    - code [ref=f11e550]: INITIAL_AUDITOR_PASS
+                    - text: in
+                    - code [ref=f11e551]: .env
+                  - listitem [ref=f11e552]:
+                    - strong [ref=f11e553]: CEO
+                    - text: ": Set"
+                    - code [ref=f11e554]: INITIAL_CEO_USER
+                    - text: and
+                    - code [ref=f11e555]: INITIAL_CEO_PASS
+                    - text: in
+                    - code [ref=f11e556]: .env
+                - generic [ref=f11e557]:
+                  - heading "Docker Deployment (Optional)" [level=2] [ref=f11e558]
+                  - 'link "Permalink: Docker Deployment (Optional)" [ref=f11e559] [cursor=pointer]':
+                    - /url: "#docker-deployment-optional"
+                - generic [ref=f11e562]:
+                  - generic [ref=f11e563]:
+                    - generic [ref=f11e564]: "# Build and run with Docker Compose"
+                    - text: docker-compose up -d
+                  - button "Copy code to clipboard" [ref=f11e566] [cursor=pointer]
+                - generic [ref=f11e570]:
+                  - heading "Environment Variables" [level=2] [ref=f11e571]
+                  - 'link "Permalink: Environment Variables" [ref=f11e572] [cursor=pointer]':
+                    - /url: "#environment-variables"
+                - generic [ref=f11e575]:
+                  - heading "Backend (.env)" [level=3] [ref=f11e576]
+                  - 'link "Permalink: Backend (.env)" [ref=f11e577] [cursor=pointer]':
+                    - /url: "#backend-env"
+                - generic [ref=f11e580]:
+                  - generic [ref=f11e581]:
+                    - generic [ref=f11e582]: "# Database"
+                    - text: DATABASE_URL=
+                    - generic [ref=f11e583]: "\"file:./dev.db\""
+                    - generic [ref=f11e584]: "# JWT Secret (minimum 32 characters)"
+                    - text: JWT_SECRET=
+                    - generic [ref=f11e585]: "\"your-super-secret-jwt-key-change-this\""
+                    - generic [ref=f11e586]: "# IP Hash Pepper (for rate limiting)"
+                    - text: IP_HASH_PEPPER=
+                    - generic [ref=f11e587]: "\"another-random-string-here\""
+                    - generic [ref=f11e588]: "# Initial Users"
+                    - text: INITIAL_AUDITOR_USER=
+                    - generic [ref=f11e589]: "\"auditor\""
+                    - text: INITIAL_AUDITOR_PASS=
+                    - generic [ref=f11e590]: "\"changeme123\""
+                    - text: INITIAL_CEO_USER=
+                    - generic [ref=f11e591]: "\"ceo\""
+                    - text: INITIAL_CEO_PASS=
+                    - generic [ref=f11e592]: "\"changeme123\""
+                    - generic [ref=f11e593]: "# Server"
+                    - text: PORT=3001 NODE_ENV=
+                    - generic [ref=f11e594]: "\"production\""
+                    - generic [ref=f11e595]: "# CORS (frontend URL)"
+                    - text: CORS_ORIGIN=
+                    - generic [ref=f11e596]: "\"http://localhost:5173\""
+                  - button "Copy code to clipboard" [ref=f11e598] [cursor=pointer]
+                - generic [ref=f11e602]:
+                  - heading "Security Considerations" [level=2] [ref=f11e603]
+                  - 'link "Permalink: Security Considerations" [ref=f11e604] [cursor=pointer]':
+                    - /url: "#security-considerations"
+                - list [ref=f11e607]:
+                  - listitem [ref=f11e608]:
+                    - strong [ref=f11e609]: Data Residency
+                    - text: ": All data is stored locally on your server. No external APIs or cloud storage."
+                  - listitem [ref=f11e610]:
+                    - strong [ref=f11e611]: Anonymity
+                    - text: ": The system does not track IP addresses (only hashes them for rate limiting)."
+                  - listitem [ref=f11e612]:
+                    - strong [ref=f11e613]: File Uploads
+                    - text: ": Files are stored with UUID filenames, outside the web root. Only authenticated auditors can download."
+                  - listitem [ref=f11e614]:
+                    - strong [ref=f11e615]: Authentication
+                    - text: ": JWT tokens expire after 1 hour. Login is rate-limited (5 attempts per 15 minutes)."
+                  - listitem [ref=f11e616]:
+                    - strong [ref=f11e617]: Company Responsibility
+                    - text: ": The deploying organization is responsible for:"
+                    - list [ref=f11e618]:
+                      - listitem [ref=f11e619]: Hosting and data residency
+                      - listitem [ref=f11e620]: Regular backups
+                      - listitem [ref=f11e621]: Server hardening (firewall, SSL/TLS)
+                      - listitem [ref=f11e622]: Compliance with local regulations
+                - generic [ref=f11e623]:
+                  - heading "License" [level=2] [ref=f11e624]
+                  - 'link "Permalink: License" [ref=f11e625] [cursor=pointer]':
+                    - /url: "#license"
+                - paragraph [ref=f11e628]:
+                  - text: This project is licensed under the MIT License - see
+                  - link "LICENSE" [ref=f11e629] [cursor=pointer]:
+                    - /url: /majidrajpar/corporate-whistleblower-lite/blob/main/LICENSE
+                  - text: file for details.
+                - paragraph [ref=f11e630]:
+                  - text: Copyright (c) 2026
+                  - link "Majid Mumtaz" [ref=f11e631] [cursor=pointer]:
+                    - /url: https://majidrajpar.github.io/portfolio_my/
+                - generic [ref=f11e632]:
+                  - heading "Support" [level=2] [ref=f11e633]
+                  - 'link "Permalink: Support" [ref=f11e634] [cursor=pointer]':
+                    - /url: "#support"
+                - paragraph [ref=f11e637]: For issues and feature requests, please open an issue on GitHub.
+                - separator [ref=f11e638]
+                - paragraph [ref=f11e639]:
+                  - strong [ref=f11e640]: Note
+                  - text: ": This application is designed for laptop/desktop use and is optimized for internal organizational use."
+        - generic [ref=f11e643]:
+          - generic [ref=f11e644]:
+            - heading "About Edit repository metadata" [level=2] [ref=f11e645]:
+              - generic [ref=f11e647]:
+                - generic [ref=f11e648]: About
+                - button "Edit repository metadata" [ref=f11e649] [cursor=pointer]
+            - paragraph [ref=f11e652]: Lightweight self-hosted whistleblowing platform — deploy in minutes, not hours
+            - heading "Resources" [level=3] [ref=f11e653]
+            - link "Readme" [ref=f11e655] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+            - link "MIT license" [ref=f11e659] [cursor=pointer]:
+              - /url: "#MIT-1-ov-file"
+            - link "Activity" [ref=f11e663] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite/activity
+            - heading "Stars" [level=3] [ref=f11e666]
+            - link [ref=f11e668] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite/stargazers
+              - strong [ref=f11e672]: "0"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=f11e673]
+            - link [ref=f11e675] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite/watchers
+              - strong [ref=f11e679]: "0"
+              - text: watching
+            - heading "Forks" [level=3] [ref=f11e680]
+            - link [ref=f11e682] [cursor=pointer]:
+              - /url: /majidrajpar/corporate-whistleblower-lite/forks
+              - strong [ref=f11e686]: "0"
+              - text: forks
+          - heading "Releases" [level=2] [ref=f11e688]
+          - heading "Packages" [level=2] [ref=f11e692]
+          - heading "Contributors" [level=2] [ref=f11e695]
+          - heading "Languages" [level=2] [ref=f11e698]
+  - contentinfo [ref=f11e701]:
+    - heading "Footer" [level=2] [ref=f11e702]
+    - generic [ref=f11e703]:
+      - generic [ref=f11e704]:
+        - link "GitHub Homepage" [ref=f11e705] [cursor=pointer]:
+          - /url: https://github.com
+        - generic [ref=f11e708]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=f11e709]:
+        - heading "Footer navigation" [level=3] [ref=f11e710]
+        - list "Footer navigation" [ref=f11e711]:
+          - listitem [ref=f11e712]:
+            - link "Terms" [ref=f11e713] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=f11e714]:
+            - link "Privacy" [ref=f11e715] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=f11e716]:
+            - link "Security" [ref=f11e717] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=f11e718]:
+            - link "Status" [ref=f11e719] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=f11e720]:
+            - link "Community" [ref=f11e721] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=f11e722]:
+            - link "Docs" [ref=f11e723] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=f11e724]:
+            - link "Contact" [ref=f11e725] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=f11e726]:
+            - button "Manage cookies" [ref=f11e728] [cursor=pointer]
+          - listitem [ref=f11e729]:
+            - button "Do not share my personal information" [ref=f11e731] [cursor=pointer]
