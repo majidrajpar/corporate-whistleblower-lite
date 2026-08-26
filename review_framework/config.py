@@ -6,14 +6,16 @@ Note: CrewAI requires Python < 3.14. For Python 3.14+, we use the standalone
 review script (run_quick_review.py) which uses langchain directly.
 
 This config provides LLM setup for both modes.
+IMPORTANT: Set OLLAMA_API_KEY as environment variable. NEVER commit API keys.
 """
 
 import os
 
 # Ollama Cloud Configuration (same as main framework)
-OLLAMA_API_KEY = "[REDACTED]"
-OLLAMA_BASE_URL = "https://ollama.com/v1/"
-MODEL_NAME = "kimi-k2.6"
+# Set OLLAMA_API_KEY environment variable - never hardcode API keys
+OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY", "")
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "https://ollama.com/v1/")
+MODEL_NAME = os.getenv("MODEL_NAME", "kimi-k2.6")
 
 try:
     from langchain_openai import ChatOpenAI
@@ -23,6 +25,11 @@ except ImportError:
 
 def get_llm():
     """Get the LLM instance for review agents."""
+    if not OLLAMA_API_KEY:
+        raise ValueError(
+            "OLLAMA_API_KEY environment variable is required. "
+            "Set it with: export OLLAMA_API_KEY='your-key-here'"
+        )
     if not LANGCHAIN_AVAILABLE:
         raise ImportError("langchain-openai not available. Install: pip install langchain-openai")
     return ChatOpenAI(

@@ -161,6 +161,8 @@ CORS_ORIGIN="http://localhost:5173"
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
 
+Copyright (c) 2026 [Majid Mumtaz](https://majidrajpar.github.io/portfolio_my/)
+
 ## Support
 
 For issues and feature requests, please open an issue on GitHub.
