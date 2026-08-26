@@ -1,4 +1,4 @@
-# KSA Whistleblowing Portal
+# Corporate Whistleblower Lite
 
 A lightweight, open-source, self-hosted whistleblowing web application designed for organizations in Saudi Arabia and beyond. Deploy in minutes — not hours.
 
