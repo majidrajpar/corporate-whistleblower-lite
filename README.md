@@ -1,8 +1,8 @@
 # Corporate Whistleblower Lite
 
-A lightweight, open-source, self-hosted whistleblowing web application designed for organizations in Saudi Arabia and beyond. Deploy in minutes — not hours.
+A lightweight, open-source, self-hosted whistleblowing web application for organizations of all sizes — companies, NGOs, municipalities, schools, and more. Deploy in minutes — not hours.
 
-Employees can report wrongdoing anonymously, and internal audit staff can review, investigate, and escalate reports to executive leadership — all while maintaining complete data privacy and control.
+Enable anyone to report wrongdoing anonymously, while internal teams review, investigate, and escalate reports — all while maintaining complete data privacy and control.
 
 ## Features
 
@@ -25,7 +25,7 @@ Unlike existing solutions ([SecureDrop](https://github.com/freedomofpress/secure
 - **Easy to Deploy**: `npm install` and you're running in minutes, not hours
 - **Corporate-Focused**: Built for internal organizational use with role-based access (Internal Audit & CEO)
 - **Modern Stack**: React 18 + Vite + Express + Prisma (not Python/Django)
-- **KSA-Ready**: Designed for Saudi Arabian compliance requirements and data residency
+- **Compliance-Ready**: Designed for data residency and privacy requirements worldwide
 
 | Feature | SecureDrop | GlobaLeaks | **This Project** |
 |---------|------------|------------|------------------|
@@ -151,11 +151,11 @@ CORS_ORIGIN="http://localhost:5173"
 - **Anonymity**: The system does not track IP addresses (only hashes them for rate limiting).
 - **File Uploads**: Files are stored with UUID filenames, outside the web root. Only authenticated auditors can download.
 - **Authentication**: JWT tokens expire after 1 hour. Login is rate-limited (5 attempts per 15 minutes).
-- **Company Responsibility**: The deploying company is responsible for:
+- **Company Responsibility**: The deploying organization is responsible for:
   - Hosting and data residency
   - Regular backups
   - Server hardening (firewall, SSL/TLS)
-  - Compliance with KSA regulations
+  - Compliance with local regulations
 
 ## License
 
