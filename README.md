@@ -59,8 +59,8 @@ Unlike existing solutions ([SecureDrop](https://github.com/freedomofpress/secure
 ### 1. Clone and Setup
 
 ```bash
-git clone https://github.com/your-org/ksa-whistleblowing.git
-cd ksa-whistleblowing
+git clone https://github.com/majidrajpar/corporate-whistleblower-lite.git
+cd corporate-whistleblower-lite
 ```
 
 ### 2. Backend Setup
