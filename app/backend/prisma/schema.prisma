@@ -1,0 +1,91 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ── Enums (stored as strings in SQLite) ──────────────────────────────────────────────
+
+// UserRole enum values: AUDITOR, CEO
+// ReportStatus enum values: NEW, IN_REVIEW, ESCALATED, RESOLVED
+// ReportCategory enum values: FINANCIAL_MISCONDUCT, FRAUD_CORRUPTION, HARASSMENT_WORKPLACE_MISCONDUCT, HEALTH_SAFETY_VIOLATION, OTHER
+// AuditAction enum values: VIEWED, ESCALATED, RESOLVED
+
+// ── Models ─────────────────────────────────────────────
+
+model User {
+  id           String     @id @default(uuid())
+  email        String     @unique
+  passwordHash String
+  name         String
+  role         String     // AUDITOR | CEO
+  isActive     Boolean    @default(true)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  lastLoginAt  DateTime?
+  auditLogs    AuditLog[]
+}
+
+model Report {
+  id           String   @id @default(uuid())
+  receiptCode  String   @unique // 16-char alphanumeric reporter key
+  category     String   // FINANCIAL_MISCONDUCT | FRAUD_CORRUPTION | HARASSMENT_WORKPLACE_MISCONDUCT | HEALTH_SAFETY_VIOLATION | OTHER
+  description  String
+  incidentDate DateTime?
+  location     String?
+  status       String   @default("NEW") // NEW | IN_REVIEW | ESCALATED | RESOLVED
+  filePath     String?  // UUID filename from server-side upload (validated)
+  // Note: No IP-derived data stored to preserve anonymity
+  // Rate limiting handled by express-rate-limit middleware (ephemeral)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  attachments  Attachment[]
+  auditLogs    AuditLog[]
+
+  // Performance indexes for common queries
+  @@index([status, createdAt])
+  @@index([category])
+  @@index([receiptCode])
+}
+
+model Attachment {
+  id           String   @id @default(uuid())
+  reportId     String
+  report       Report   @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  filename     String   // UUID on disk; no exec extension risk
+  originalName String   // sanitized display name only
+  mimeType     String   // validated whitelist
+  size         Int      // bytes; enforced ≤ 5MB
+  storagePath  String   // absolute path outside webroot
+  exifStripped Boolean  @default(false)
+  createdAt    DateTime @default(now())
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  reportId  String?
+  report    Report?  @relation(fields: [reportId], references: [id], onDelete: SetNull)
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  action    String   // VIEWED | ESCALATED | RESOLVED
+  details   String?  // e.g., "Status: NEW → IN_REVIEW"
+  createdAt DateTime @default(now())
+
+  @@index([reportId])
+  @@index([userId])
+  @@index([createdAt])
+}
+
+// Tracks anonymous submission attempts for rate limiting
+model RateLimit {
+  id          String   @id @default(uuid())
+  ipHash      String
+  windowStart DateTime // truncated to the top of the hour
+  count       Int      @default(1)
+
+  @@unique([ipHash, windowStart])
+  @@index([ipHash, windowStart])
+}

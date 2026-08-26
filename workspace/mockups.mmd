@@ -1,0 +1,71 @@
+```mermaid
+
+### A. Anonymous Submission Page
+```mermaid
+graph TB
+    subgraph HeaderZone[" "]
+        H1[🔒 Anonymous Ethics Portal<br/>Zero Tracking • No Cookies • No IP Logs • KSA Real Estate Corp]
+    end
+
+    subgraph FormZone[" "]
+        direction TB
+        S1[Step 1: Select Category<br/>┌─────────────┐ ┌─────────────┐<br/>│ Procurement │ │   Safety    │<br/>└─────────────┘ └─────────────┘<br/>┌─────────────┐ ┌─────────────┐<br/>│Tenant Rights│ │  Financial  │<br/>└─────────────┘ └─────────────┘<br/>┌─────────────┐<br/>│ Harassment  │<br/>└─────────────┘]
+        S2[Step 2: Incident Details<br/>Describe what happened:<br/>[__________________________________________]]
+        S3[Step 3: Attach Evidence<br/>📎 Drag & Drop PDF, JPG, PNG<br/>⚠️ EXIF metadata will be automatically stripped]
+        S4[Optional: Incident Date / Location<br/>[__________] [__________]]
+    end
+
+    subgraph ActionZone[" "]
+        A1[[ 🛡️ Submit Report Securely ]]
+        A2[You will receive a unique Receipt Code on the next screen.<br/>Save it to check for updates or reply anonymously.]
+    end
+
+    HeaderZone --> FormZone
+    FormZone --> ActionZone
+```
+```mermaid
+graph TB
+    subgraph Sidebar["Audit Console"]
+        direction TB
+        NAV1[📥 New Reports (3)]
+        NAV2[🔍 Under Review]
+        NAV3[✅ Resolved]
+        NAV4[⚙️ Settings & Keys]
+    end
+
+    subgraph MainPanel["Case Management Workspace"]
+        direction TB
+        M1[Filters: Category ▼ | Priority ▼ | Date Range ▼ | Status ▼]
+        M2[┌────────┬─────────────┬──────────┬──────────┬─────────┐<br/>│ Case ID│ Category    │ Received │ Priority │ Status  │<br/>├────────┼─────────────┼──────────┼──────────┼─────────┤<br/>│ #1042  │ Procurement │ 14/03/44 │ High     │ New     │<br/>│ #1041  │ Safety      │ 13/03/44 │ Medium   │ Review  │<br/>└────────┴─────────────┴──────────┴──────────┴─────────┘]
+        M3[Active Case Detail<br/>┌──────────────────────────────────────────┐<br/>│ Receipt: KSA-7F9A-2B4C-1D8E              │<br/>│ Content: [Decrypted Text View]             │<br/>│ Evidence: 📄 doc.pdf  📷 photo.png         │<br/>│ Internal Notes: [____________________]   │<br/>│ Audit Log: Ahmed viewed files 10:14 AM   │<br/>│ Actions: [Status ▼] [Ask Question] [Close]│<br/>└──────────────────────────────────────────┘]
+    end
+
+    Sidebar --- MainPanel
+```
+```mermaid
+graph TB
+    subgraph TopBar["Executive Governance View"]
+        direction LR
+        K1[📋 Total Reports<br/>24]
+        K2[🔴 Open Cases<br/>7]
+        K3[⏱ Avg Resolution<br/>12 Days]
+        K4[⚠️ High Risk Items<br/>2]
+    end
+
+    subgraph AnalyticsPanel["Strategic Analytics (Aggregated Only)"]
+        direction LR
+        G1[📊 Category Distribution<br/>Pie Chart]
+        G2[📈 90-Day Trend<br/>Line Chart]
+        G3[📉 Resolution Velocity<br/>Bar Chart]
+    end
+
+    subgraph AlertFeed["Executive Risk Alerts"]
+        direction TB
+        N1[⚠️ Systemic: 3rd Procurement report referencing Vendor Category X]
+        N2[📊 Monthly Board Summary: Ready for Export]
+        N3[🚨 Safety reports up 40% QoQ — recommend site audit]
+    end
+
+    TopBar --> AnalyticsPanel
+    AnalyticsPanel --> AlertFeed
+```

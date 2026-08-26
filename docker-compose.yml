@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./app/backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=file:/app/data/dev.db
+      - JWT_SECRET=${JWT_SECRET}
+      - IP_HASH_PEPPER=${IP_HASH_PEPPER}
+      - INITIAL_AUDITOR_USER=${INITIAL_AUDITOR_USER}
+      - INITIAL_AUDITOR_PASS=${INITIAL_AUDITOR_PASS}
+      - INITIAL_CEO_USER=${INITIAL_CEO_USER}
+      - INITIAL_CEO_PASS=${INITIAL_CEO_PASS}
+      - CORS_ORIGIN=http://localhost:5173
+    volumes:
+      - backend-data:/app/data
+      - backend-uploads:/app/uploads
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./app/frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80"
+    environment:
+      - VITE_API_URL=http://localhost:3001
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  backend-data:
+  backend-uploads:

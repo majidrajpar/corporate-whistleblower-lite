@@ -1,0 +1,58 @@
+# Node modules
+node_modules/
+*/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Database files
+*.db
+*.db-journal
+prisma/dev.db
+prisma/dev.db-journal
+
+# Uploads
+uploads/
+*/uploads/
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# Framework specific
+review_output/*.json
+review_output/*.md
+!review_output/.gitkeep
+
+# Keep example env
+!.env.example
