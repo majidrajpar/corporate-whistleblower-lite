@@ -37,22 +37,17 @@ Thumbs.db
 *.swp
 *.swo
 
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.egg-info/
-.pytest_cache/
-
 # Temporary files
 *.tmp
 *.temp
 temp/
 
-# Framework specific
-review_output/*.json
-review_output/*.md
-!review_output/.gitkeep
+# Screenshots / local artifacts
+*.png
+*.jpg
+*.jpeg
+.github-repo-*
+.playwright-mcp/
 
 # Keep example env
 !.env.example
