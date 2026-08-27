@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
 function Navbar() {
-  const { user, isAuthenticated, logout } = useAuth();
+  const { user, isAuthenticated, logout, isAuditor, isCEO } = useAuth();
 
   return (
     <nav className="navbar">
@@ -16,6 +16,8 @@ function Navbar() {
         
         {isAuthenticated ? (
           <>
+            {isAuditor && <Link to="/dashboard">Dashboard</Link>}
+            {isCEO && <Link to="/ceo">CEO Dashboard</Link>}
             <span className="user-role">
               {user?.role === 'AUDITOR' ? 'Internal Audit' : 'CEO'}
             </span>

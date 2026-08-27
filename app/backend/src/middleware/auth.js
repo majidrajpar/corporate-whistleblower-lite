@@ -20,14 +20,16 @@ function verifyToken(req, res, next) {
   }
 }
 
-// Middleware to require specific role
+// Middleware to require specific role(s)
 function requireRole(role) {
   return (req, res, next) => {
     if (!req.user) {
       return res.status(401).json({ error: 'Authentication required' });
     }
 
-    if (req.user.role !== role) {
+    // Support single role string or array of allowed roles
+    const allowedRoles = Array.isArray(role) ? role : [role];
+    if (!allowedRoles.includes(req.user.role)) {
       return res.status(403).json({ error: 'Insufficient permissions' });
     }
 

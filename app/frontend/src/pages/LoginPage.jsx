@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
 function LoginPage() {
@@ -7,6 +8,7 @@ function LoginPage() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const { login } = useAuth();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,9 +19,9 @@ function LoginPage() {
       const user = await login(username, password);
       // Redirect based on role
       if (user.role === 'AUDITOR') {
-        window.location.href = '/dashboard';
+        navigate('/dashboard');
       } else if (user.role === 'CEO') {
-        window.location.href = '/ceo';
+        navigate('/ceo');
       }
     } catch (err) {
       setError('Invalid username or password');

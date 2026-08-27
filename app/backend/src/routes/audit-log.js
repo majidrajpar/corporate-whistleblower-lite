@@ -3,8 +3,8 @@ const prisma = require('../utils/prisma');
 const { verifyToken, requireRole } = require('../middleware/auth');
 const router = express.Router();
 
-// GET /api/audit-log - View audit logs (auditor and CEO only)
-router.get('/', verifyToken, requireRole('AUDITOR'), async (req, res) => {
+// GET /api/audit-log - View audit logs (auditor and CEO)
+router.get('/', verifyToken, requireRole(['AUDITOR', 'CEO']), async (req, res) => {
   try {
     const logs = await prisma.auditLog.findMany({
       orderBy: { createdAt: 'desc' },

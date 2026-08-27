@@ -112,7 +112,7 @@ app.get('/api/health', (req, res) => {
 // Files are served through authenticated endpoint, not static
 const ALLOWED_EXTENSIONS = ['.pdf', '.jpg', '.jpeg', '.png'];
 
-app.get('/api/files/:filename', verifyToken, requireRole('AUDITOR'), (req, res) => {
+app.get('/api/files/:filename', verifyToken, requireRole(['AUDITOR', 'CEO']), (req, res) => {
   const filename = req.params.filename;
   // Sanitize filename - only allow UUID format with safe extensions
   const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\.[a-z]{3,4}$/i;
